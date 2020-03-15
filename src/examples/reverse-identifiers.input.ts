@@ -1,6 +1,6 @@
 type NameOrNameArray = string | string[];
 
-function createName(name: NameOrNameArray) {
+function createName(name: NameOrNameArray): string {
   if (typeof name === "string") {
     return name;
   } else {
@@ -8,5 +8,5 @@ function createName(name: NameOrNameArray) {
   }
 }
 
-var greetingMessage = `Greetings, ${createName(["Sam", "Smith"])}`;
+const greetingMessage = `Greetings, ${createName(["Sam", "Smith"])}`;
 alert(greetingMessage);
