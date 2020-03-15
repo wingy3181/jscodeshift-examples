@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --fix **/*.ts",
     "jscodeshift": "jscodeshift -t ./src/examples/reverse-identifiers.transform.ts --extensions=ts src/examples/reverse-identifiers.input.ts --print --dry",
     "prettier:check": "prettier --check **/*.{js,ts,css,json,md}",
     "prettier:write": "prettier --write **/*.{js,ts,css,json,md}",
@@ -33,8 +34,12 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,css,json,md}": [
+    "*.{js,css,json,md}": [
       "prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "eslint --fix",
       "git add"
     ]
   }
