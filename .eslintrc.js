@@ -15,6 +15,7 @@
 //   - https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.json
 // - prettier/@typescript-eslint
 //   - https://github.com/prettier/eslint-config-prettier/blob/master/%40typescript-eslint.js
+//   - https://github.com/prettier/eslint-config-prettier#cli-helper-tool
 // - plugin:prettier/recommended
 //   - https://github.com/prettier/eslint-plugin-prettier/blob/master/eslint-plugin-prettier.js
 // Rules:
