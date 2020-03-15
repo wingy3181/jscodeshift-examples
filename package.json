@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "Cheong Yip <wingy3181@gmail.com> (https://wingcheongyip.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "25.1.4",
+    "@types/jscodeshift": "0.6.3",
+    "jest": "25.1.0",
+    "jscodeshift": "0.7.0"
+  }
 }
