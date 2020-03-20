@@ -1,4 +1,6 @@
-// See https://prettier.io/docs/en/options.html for more detail.
+// For a detailed explanation regarding each configuration property, visit:
+// https://prettier.io/docs/en/options.html
+
 module.exports = {
   // - Include parentheses around a sole arrow function parameter.
   // arrowParens: "avoid",
