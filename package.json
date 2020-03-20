@@ -10,7 +10,7 @@
     "jscodeshift": "jscodeshift -t ./src/examples/reverse-identifiers.transform.ts --extensions=ts src/examples/reverse-identifiers.input.ts --print --dry",
     "prettier:check": "prettier --check **/*.{js,ts,css,json,md}",
     "prettier:write": "prettier --write **/*.{js,ts,css,json,md}",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Cheong Yip <wingy3181@gmail.com> (https://wingcheongyip.com/)",
