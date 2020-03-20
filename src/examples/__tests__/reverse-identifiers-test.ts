@@ -22,7 +22,7 @@ var message = firstWord + secondWord;`,
     `
 var droWtsrif = 'Hello ';
 var droWdnoces = 'world';
-var egassem = droWtsrif + droWdnoces;
+var egassem = droWtsrif + droWdnoces1;
   `
   );
   defineInlineTest(transform, {}, "function aFunction() {};", "function noitcnuFa() {};", "Reverses function names");
