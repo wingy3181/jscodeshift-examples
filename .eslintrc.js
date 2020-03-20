@@ -26,6 +26,9 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
+  env: {
+    node: true
+  },
   plugins: [
     "@typescript-eslint", // tells ESLint to load the plugin package "@typescript-eslint/eslint-plugin"
     "prettier" // tells ESLint to load the plugin package "eslint-plugin-prettier"
