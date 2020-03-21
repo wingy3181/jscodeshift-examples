@@ -1,8 +1,11 @@
 {
   "name": "jscodeshift-examples",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Examples of jscodeshift transforms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wingy3181/jscodeshift-examples.git"
+  },
   "scripts": {
     "lint": "eslint . --ext ts",
     "lint:fix": "eslint --fix **/*.ts",
