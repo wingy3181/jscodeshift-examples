@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+# compile reports
+/reports
+
 # dependencies
 /node_modules
 
