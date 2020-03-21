@@ -8,6 +8,7 @@
   },
   "scripts": {
     "audit": "npm audit --json | npx npm-audit-html --output reports/audit/index.html && npm audit --audit-level=high",
+    "clean": "rm -rf reports",
     "lint": "npm run type:check && npm run eslint",
     "type:check": "tsc --noEmit",
     "eslint": "eslint . --ext ts",
@@ -18,7 +19,8 @@
     "prettier:check": "prettier --check **/*.{js,ts,css,json,md}",
     "prettier:write": "prettier --write **/*.{js,ts,css,json,md}",
     "start": "ts-node scripts/run-jscodeshift-transforms.ts",
-    "test": "jest"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "Cheong Yip <wingy3181@gmail.com> (https://wingcheongyip.com/)",
@@ -39,6 +41,8 @@
     "husky": "4.2.3",
     "inquirer": "7.1.0",
     "jest": "25.1.0",
+    "jest-html-reporters": "1.2.1",
+    "jest-stare": "1.26.0",
     "jscodeshift": "0.7.0",
     "lint-staged": "10.0.8",
     "prettier": "1.19.1",
