@@ -26,7 +26,7 @@ const examplesDir = path.join(projectDir, "src/examples");
 const transforms = fs.readdirSync(examplesDir);
 
 // Function to recursively get all files within a folder matching a particular regex
-const getAllFiles = (dirPath: string, filenameRegex = /.*/, files: string[] = []) => {
+const getAllFiles = (dirPath: string, filenameRegex = /.*/, files: string[] = []): string[] => {
   fs.readdirSync(dirPath).forEach(file => {
     if (fs.statSync(`${dirPath}/${file}`).isDirectory()) {
       files = getAllFiles(`${dirPath}/${file}`, filenameRegex, files);
@@ -37,7 +37,7 @@ const getAllFiles = (dirPath: string, filenameRegex = /.*/, files: string[] = []
   return files;
 };
 
-const main = async () => {
+const main = async (): Promise<{ transform: string; transformFile: string; inputFile: string; options: string }> => {
   const { transform } = await inquirer.prompt([
     {
       type: "list",
@@ -71,7 +71,7 @@ const main = async () => {
   return { transform, transformFile, inputFile, options };
 };
 
-main().then(({ transform, transformFile, inputFile, options }) => {
+main().then(({ transformFile, inputFile, options }) => {
   // Execute
   // e.g.
   // "jscodeshift:reverse-identifiers": "jscodeshift -t ./src/examples/reverse-identifiers/reverse-identifiers.ts --extensions=ts src/examples/reverse-identifiers/reverse-identifiers.input.ts --print --dry"
