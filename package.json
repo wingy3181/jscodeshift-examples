@@ -7,6 +7,7 @@
     "url": "https://github.com/wingy3181/jscodeshift-examples.git"
   },
   "scripts": {
+    "audit": "npm audit --json | npx npm-audit-html --output reports/audit/index.html",
     "lint": "eslint . --ext ts",
     "lint:fix": "eslint --fix **/*.ts",
     "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
