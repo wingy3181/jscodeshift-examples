@@ -19,12 +19,15 @@ module.exports = {
 
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
+  collectCoverageFrom: ["src/**/*", "!src/**/__testfixtures__/**/*", "!src/**/*.input.{ts,js}"],
 
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
+  coverageDirectory: "reports/coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -38,9 +41,18 @@ module.exports = {
   //   "lcov",
   //   "clover"
   // ],
+  coverageReporters: ["text", "html"],
 
   // An object that configures minimum threshold enforcement for coverage results
   // coverageThreshold: undefined,
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80
+    }
+  },
 
   // A path to a custom dependency extractor
   // dependencyExtractor: undefined,
@@ -99,6 +111,19 @@ module.exports = {
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
+  reporters: [
+    "default",
+    [
+      "jest-stare",
+      {
+        resultDir: "reports/tests",
+        reportTitle: "Test report",
+        reportHeadline: "UTest report",
+        coverageLink: "../coverage/index.html"
+      }
+    ],
+    ["jest-html-reporters", { publicPath: "./reports/tests" }]
+  ],
 
   // Automatically reset mock state between every test
   // resetMocks: false,
@@ -134,7 +159,7 @@ module.exports = {
 
   // The test environment that will be used for testing
   // testEnvironment: "jsdom",
-  testEnvironment: "node"
+  testEnvironment: "node",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -184,6 +209,8 @@ module.exports = {
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],
+  // Ref: https://github.com/dkelosky/jest-stare#jest-watch
+  watchPathIgnorePatterns: [".*jest-stare.*\\.js", "reports"]
 
   // Whether to use watchman for file crawling
   // watchman: true,

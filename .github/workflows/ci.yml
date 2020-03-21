@@ -39,4 +39,22 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: npm-audit-report
-          path: reports/audit/index.html
+          path: reports/audit
+      - name: Archive test results
+        if: always()
+        uses: actions/upload-artifact@v1
+        with:
+          name: test-report
+          path: reports/tests
+      - name: Archive test coverage results
+        if: always()
+        uses: actions/upload-artifact@v1
+        with:
+          name: coverage-report
+          path: reports/coverage
+      - name: Archive reports
+        if: always()
+        uses: actions/upload-artifact@v1
+        with:
+          name: reports
+          path: reports
