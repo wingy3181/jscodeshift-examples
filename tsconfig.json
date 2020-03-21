@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noEmit": true
   },
   "exclude": ["src/**/__testfixtures__/*"]
 }
