@@ -10,7 +10,6 @@
     "audit": "npm audit --json | npx npm-audit-html --output reports/audit/index.html && npm audit --audit-level=high",
     "clean": "rm -rf reports",
     "lint": "npm run type:check && npm run eslint",
-    "type:check": "tsc --noEmit",
     "eslint": "eslint . --ext ts",
     "eslint:check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
     "eslint:fix": "eslint --fix **/*.ts",
@@ -22,7 +21,8 @@
     "prettier:write": "prettier --write **/*.{js,ts,css,json,md}",
     "start": "ts-node scripts/run-jscodeshift-transforms.ts",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "type:check": "tsc --noEmit"
   },
   "keywords": [],
   "author": "Cheong Yip <wingy3181@gmail.com> (https://wingcheongyip.com/)",
