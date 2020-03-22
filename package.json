@@ -10,7 +10,7 @@
     "audit": "npm audit --json | npx npm-audit-html --output reports/audit/index.html && npm audit --audit-level=high",
     "clean": "rm -rf reports",
     "lint": "npm run type:check && npm run eslint",
-    "eslint": "eslint . --ext ts",
+    "eslint": "eslint . --ext js,ts",
     "eslint:check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
     "eslint:fix": "eslint --fix **/*.ts",
     "jest:projects": "jest --config=jest.config.projects.js",
@@ -60,10 +60,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,json,md}": [
+    "*.{css,json,md}": [
       "prettier --write"
     ],
-    "*.ts": [
+    "*.{js,ts}": [
       "eslint --fix"
     ]
   }
