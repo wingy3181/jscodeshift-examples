@@ -22,11 +22,14 @@ A few examples on [jscodeshift][jscodeshift] codemods with tests.
 <!-- toc -->
 
 - [Quick Usage](#quick-usage)
+  - [Running](#running)
+  - [Linting and Type-Checking](#linting-and-type-checking)
   - [Unit Testing](#unit-testing)
   - [Developing](#developing)
-  - [Building](#building)
 - [Supported Node Versions](#supported-node-versions)
 - [Technologies Used](#technologies-used)
+- [References](#references)
+  - [jscodeshift](#jscodeshift)
 - [License](#license)
 
 <!-- tocstop -->
@@ -88,9 +91,22 @@ The repository has been tested to work in Node 12.
 - [Renovate](https://github.com/renovatebot/renovate) (dependency update)
 - [GitHub Actions](https://github.com/features/actions) (continuous integration)
 
+## References
+
+### jscodeshift
+
+- [jscodeshift][jscodeshift]
+- [recast](https://github.com/benjamn/recast) (used by `jscodeshift` to transform code into an [abstract syntax tree][ast] (AST))
+- [ast-types](https://github.com/benjamn/ast-types) (used by `jscodeshift` to provide typescript typings within the [abstract syntax tree][ast]
+- [AST Explorer](https://astexplorer.net/)
+- [Awesome jscodeshift](https://github.com/sejoker/awesome-jscodeshift) (curated list of `jscodeshift` references)
+- [skovy.dev - Creating a custom transform for jscodeshift](https://skovy.dev/jscodeshift-custom-transform/)
+- [github.com/elliottsj/jscodeshift-typescript-example](https://github.com/elliottsj/jscodeshift-typescript-example)
+
 ## License
 
 The repository is available as open source under the terms of the [MIT License](LICENSE.md).
 
 [jscodeshift]: https://github.com/facebook/jscodeshift
 [eslint]: http://eslint.org/
+[ast]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
