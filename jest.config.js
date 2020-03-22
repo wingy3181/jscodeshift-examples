@@ -118,7 +118,7 @@ module.exports = {
       {
         resultDir: "reports/tests",
         reportTitle: "Test report",
-        reportHeadline: "UTest report",
+        reportHeadline: "Test report",
         coverageLink: "../coverage/index.html"
       }
     ],
