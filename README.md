@@ -1,6 +1,6 @@
 # `jscodeshift-examples`
 
-[![license](https://img.shields.io/github/license/wingy3181/jscodeshift-examples.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/wingy3181/jscodeshift-examples.svg)](LICENSE.md)
 
 [![Maintenance Status](https://img.shields.io/badge/status-maintained-brightgreen.svg)](https://github.com/wingy3181/jscodeshift-examples/pulse)
 [![Build Status](https://github.com/wingy3181/jscodeshift-examples/workflows/CI/badge.svg)](https://github.com/wingy3181/jscodeshift-examples/actions)
