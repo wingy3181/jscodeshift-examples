@@ -1,5 +1,6 @@
 node_modules
 dist
 coverage
-__testfixtures__
+**/__testfixtures__
 /reports
+w
