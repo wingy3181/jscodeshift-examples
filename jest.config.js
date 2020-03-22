@@ -210,6 +210,7 @@ module.exports = {
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],
   // Ref: https://github.com/dkelosky/jest-stare#jest-watch
+  // Don't really need ".*jest-stare.*\\.js" as should be ignoring dot files as per https://jestjs.io/docs/en/23.x/configuration#watchpathignorepatterns-arraystring
   watchPathIgnorePatterns: [".*jest-stare.*\\.js", "reports"]
 
   // Whether to use watchman for file crawling
