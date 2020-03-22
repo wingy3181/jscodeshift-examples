@@ -7,10 +7,7 @@ const transform: Transform = (file: FileInfo, api: API) => {
     .replaceWith(p => {
       return {
         ...p.node,
-        name: p.node.name
-          .split("")
-          .reverse()
-          .join("")
+        name: p.node.name.split("").reverse().join(""),
       };
     })
     .toSource();

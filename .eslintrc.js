@@ -46,7 +46,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["**/*.ts"],
+      files: ["*.ts"],
       parser: "@typescript-eslint/parser", // Specifies the ESLint parser
       extends: [
         "eslint:recommended", // is ESLint's inbuilt "recommended" config - it turns on a small, sensible set of rules which lint for well-known best-practices.

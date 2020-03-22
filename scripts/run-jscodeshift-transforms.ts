@@ -43,8 +43,8 @@ const main = async (): Promise<{ transform: string; transformFile: string; input
       type: "list",
       name: "transform",
       message: "Select a transform:",
-      choices: [...transforms]
-    }
+      choices: [...transforms],
+    },
   ]);
 
   const transformDir = path.join(examplesDir, transform);
@@ -56,8 +56,8 @@ const main = async (): Promise<{ transform: string; transformFile: string; input
       type: "list",
       name: "inputFile",
       message: "Choose a file to transform:",
-      choices: [...transformInputFiles]
-    }
+      choices: [...transformInputFiles],
+    },
   ]);
 
   // TODO Use Reflect to determine options
@@ -65,8 +65,8 @@ const main = async (): Promise<{ transform: string; transformFile: string; input
     {
       type: "input",
       name: "options",
-      message: "Add CLI options (optional). For example, '-key1=value1 --key2=value2':"
-    }
+      message: "Add CLI options (optional). For example, '-key1=value1 --key2=value2':",
+    },
   ]);
   return { transform, transformFile, inputFile, options };
 };
@@ -90,10 +90,10 @@ main().then(({ transformFile, inputFile, options }) => {
       "--extensions=ts",
       "--parser=ts",
       inputFile,
-      ...options.split(" ")
+      ...options.split(" "),
     ],
     {
-      encoding: "utf8"
+      encoding: "utf8",
     }
   );
 
