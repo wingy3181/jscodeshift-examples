@@ -10,7 +10,7 @@ const transform: Transform = (
   {
     functionName = DEFAULT_FUNCTION_NAME,
     functionNameToCall = DEFAULT_FUNCTION_NAME_TO_CALL,
-    comment = DEFAULT_COMMENT
+    comment = DEFAULT_COMMENT,
   }: Options
 ) => {
   const j: JSCodeshift = api.jscodeshift;

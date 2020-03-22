@@ -50,8 +50,8 @@ module.exports = {
       branches: 80,
       functions: 80,
       lines: 80,
-      statements: 80
-    }
+      statements: 80,
+    },
   },
 
   // A path to a custom dependency extractor
@@ -119,10 +119,10 @@ module.exports = {
         resultDir: "reports/tests",
         reportTitle: "Test report",
         reportHeadline: "Test report",
-        coverageLink: "../coverage/index.html"
-      }
+        coverageLink: "../coverage/index.html",
+      },
     ],
-    ["jest-html-reporters", { publicPath: "./reports/tests" }]
+    ["jest-html-reporters", { publicPath: "./reports/tests" }],
   ],
 
   // Automatically reset mock state between every test
@@ -211,7 +211,7 @@ module.exports = {
   // watchPathIgnorePatterns: [],
   // Ref: https://github.com/dkelosky/jest-stare#jest-watch
   // Don't really need ".*jest-stare.*\\.js" as should be ignoring dot files as per https://jestjs.io/docs/en/23.x/configuration#watchpathignorepatterns-arraystring
-  watchPathIgnorePatterns: [".*jest-stare.*\\.js", "reports"]
+  watchPathIgnorePatterns: [".*jest-stare.*\\.js", "reports"],
 
   // Whether to use watchman for file crawling
   // watchman: true,

@@ -3,7 +3,8 @@
 
 module.exports = {
   // - Include parentheses around a sole arrow function parameter.
-  // arrowParens: "avoid",
+  // arrowParens: "always",
+  arrowParens: "avoid",
 
   // - Print spaces between brackets in object literals.
   // bracketSpacing: true,
@@ -32,7 +33,7 @@ module.exports = {
 
   // - Specify the line length that the printer will wrap on.
   // printWidth: 80,
-  printWidth: 120
+  printWidth: 120,
 
   // - By default, Prettier will wrap markdown text as-is since some services use a linebreak-sensitive renderer, e.g. GitHub comment and BitBucket. In some cases you may want to rely on editor/viewer soft wrapping instead, so this option allows you to opt out with "never".
   // proseWrap: "preserve",
@@ -57,7 +58,7 @@ module.exports = {
   // tabWidth: 2,
 
   // - Print trailing commas wherever possible when multi-line. (A single-line array, for example, never gets trailing commas.
-  // trailingComma: "none",
+  // trailingComma: "es5",
 
   // - Indent lines with tabs instead of spaces.
   // useTabs: false,

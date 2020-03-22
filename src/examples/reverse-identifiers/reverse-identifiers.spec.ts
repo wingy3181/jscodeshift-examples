@@ -14,10 +14,10 @@ describe("reverse-identifiers", () => {
         transform,
         "--extensions=ts",
         "--parser=ts",
-        path.join(__dirname, "./reverse-identifiers.input.ts")
+        path.join(__dirname, "./reverse-identifiers.input.ts"),
       ],
       {
-        encoding: "utf8"
+        encoding: "utf8",
       }
     );
 
