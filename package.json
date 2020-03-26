@@ -42,7 +42,7 @@
     "eslint-plugin-prettier": "3.1.2",
     "husky": "4.2.3",
     "inquirer": "7.1.0",
-    "jest": "25.2.1",
+    "jest": "25.2.2",
     "jest-html-reporters": "1.2.1",
     "jest-runner-eslint": "0.7.6",
     "jest-stare": "1.26.0",
