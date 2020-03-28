@@ -100,8 +100,11 @@ The repository has been tested to work in Node 12.
 - [ast-types](https://github.com/benjamn/ast-types) (used by `jscodeshift` to provide typescript typings within the [abstract syntax tree][ast]
 - [AST Explorer](https://astexplorer.net/)
 - [Awesome jscodeshift](https://github.com/sejoker/awesome-jscodeshift) (curated list of `jscodeshift` references)
-- [skovy.dev - Creating a custom transform for jscodeshift](https://skovy.dev/jscodeshift-custom-transform/)
 - [github.com/elliottsj/jscodeshift-typescript-example](https://github.com/elliottsj/jscodeshift-typescript-example)
+- [github.com/cpojer/js-codemod](https://github.com/cpojer/js-codemod)
+- [skovy.dev - Creating a custom transform for jscodeshift](https://skovy.dev/jscodeshift-custom-transform/)
+- [Medium - Kacper Kula - Metaprogramming in JS: Write your first codemod!](https://medium.com/onfido-tech/metaprogramming-in-js-write-your-first-codemod-75eca71a97e2)
+- [katilius.dev - Writing Javascript Codemods and Understanding AST Easily](https://katilius.dev/writing-js-codemods/)
 
 ## License
 
