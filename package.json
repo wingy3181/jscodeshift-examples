@@ -48,7 +48,7 @@
     "jest-stare": "2.0.0",
     "jscodeshift": "0.7.0",
     "lint-staged": "10.1.7",
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "semver": "7.3.2",
     "ts-jest": "25.4.0",
     "ts-node": "8.8.2",
