@@ -44,7 +44,7 @@
     "inquirer": "7.1.0",
     "jest": "25.4.0",
     "jest-html-reporters": "1.2.1",
-    "jest-runner-eslint": "0.7.6",
+    "jest-runner-eslint": "0.7.7",
     "jest-stare": "2.0.0",
     "jscodeshift": "0.7.0",
     "lint-staged": "10.1.7",
