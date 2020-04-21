@@ -47,7 +47,7 @@
     "jest-runner-eslint": "0.7.6",
     "jest-stare": "2.0.0",
     "jscodeshift": "0.7.0",
-    "lint-staged": "10.1.6",
+    "lint-staged": "10.1.7",
     "prettier": "2.0.4",
     "semver": "7.3.2",
     "ts-jest": "25.4.0",
