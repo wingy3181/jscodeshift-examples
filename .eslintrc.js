@@ -26,19 +26,19 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
   plugins: [
     "@typescript-eslint", // tells ESLint to load the plugin package "@typescript-eslint/eslint-plugin"
-    "prettier" // tells ESLint to load the plugin package "eslint-plugin-prettier"
+    "prettier", // tells ESLint to load the plugin package "eslint-plugin-prettier"
   ],
   extends: [
     "eslint:recommended", // is ESLint's inbuilt "recommended" config - it turns on a small, sensible set of rules which lint for well-known best-practices.
-    "plugin:prettier/recommended" // [eslint-plugin-prettier] Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    "plugin:prettier/recommended", // [eslint-plugin-prettier] Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   parserOptions: {
     ecmaVersion: 2019, // Allows for the parsing of modern ECMAScript features
-    sourceType: "module" // Allows for the use of imports
+    sourceType: "module", // Allows for the use of imports
   },
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
@@ -53,7 +53,7 @@ module.exports = {
         "plugin:@typescript-eslint/eslint-recommended", // [@typescript-eslint/eslint-plugin] is a configuration we provide which disables a few of the recommended rules from the previous set that we know are already covered by TypeScript's typechecker.
         "plugin:@typescript-eslint/recommended", // [@typescript-eslint/eslint-plugin] Uses the recommended rules from  @typescript-eslint/eslint-plugin
         "prettier/@typescript-eslint", //  [eslint-config-prettier] Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-        "plugin:prettier/recommended" // [eslint-plugin-prettier] Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+        "plugin:prettier/recommended", // [eslint-plugin-prettier] Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
       ],
       rules: {
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
